@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div(style="text-align: center;")
+    h2 Student Login
+    form(action="/login", method="POST", style="display: inline-block; text-align: left;")
+      input(type="email", name="email", id="email", placeholder="Email", required, style="margin-bottom: 10px;")
+      br
+      input(type="password", name="password", id="password", placeholder="Password", required, style="margin-bottom: 10px;")
+      br
+      button(type="submit") Login
+    p Don't have an account?
+    a(href="/register") Register here

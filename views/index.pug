@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  h2 MODULE REGISTRATION
+  h3 PROGRAM: BACHELOR OF ENGINEERING IN COMPUTER ENGINEERING
+  h3 CLASS: BENG21COE
+  p strong IMPORTANT NOTE!
+    |  Please make sure you appear in the correct CLASS and PROGRAM BEFORE MODULE REGISTRATION
+  p.
+    Make sure you have selected modules
+  h4 List of modules academic year 2023/2024: Semester 1
+  p Total Credits: 69
+  table(border="1")
+    tr
+      th Name
+      th Code
+      th Semester
+      th CAW
+      th SEW
+      th Credit
+      th Category
+      th CheckBox
+      th Selected
+    each module in modules
+      tr
+        td= module.Name
+        td= module.Code
+        td= module.Semester
+        td= module.CAW
+        td= module.SEW
+        td= module.Credit
+        td= module.Category
+        td
+          input(type="checkbox" id=module.ModuleID onchange="updateSelected(this)")
+        td= module.Selected
+  button(onclick="registerModules()") Register
+  p#confirmationMessage
+  script(src="/script.js")

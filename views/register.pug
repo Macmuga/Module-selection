@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  div(style="text-align: center;")
+    h2 Register for Student Account
+    form(action="/register", method="POST", style="display: inline-block; text-align: left;")
+      input(type="text", id="firstName", name="firstName", placeholder="First Name", required, style="margin-bottom: 10px;")
+      br
+      input(type="text", id="middleName", name="middleName", placeholder="Middle Name", style="margin-bottom: 10px;")
+      br
+      input(type="text", id="lastName", name="lastName", placeholder="Last Name", required, style="margin-bottom: 10px;")
+      br
+      input(type="password", id="password", name="password", placeholder="Password", required, style="margin-bottom: 10px;")
+      br
+      input(type="email", id="email", name="email", placeholder="Email", required, style="margin-bottom: 10px;")
+      br
+      input(type="text", id="regNo", name="regNo", placeholder="Registration Number", required, style="margin-bottom: 10px;")
+      br
+      button(type="submit") Register

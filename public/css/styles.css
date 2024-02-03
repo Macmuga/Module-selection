@@ -1,0 +1,62 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting up general styles */
+body {
+  background-color: #f0f0f0; /* changed background color */
+  margin: 30px 15% 0; /* increase top margin */
+  font-family: sans-serif;
+}
+
+/* Styling for headings */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  margin-top: 30px; /* corrected spacing */
+}
+
+h2 {
+  text-align: center; /* center-align h2 */
+  margin-top: 20px; /* add space between h1 and h2 */
+}
+
+.image-container {
+  width: 80%; /* Define a width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+img {
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+
+/* Styling for the top navigation */
+.top-nav {
+  background-color: rgb(177, 185, 185);
+  overflow: hidden;
+}
+
+/* Styling for links within the top navigation */
+.top-nav a {
+  float: left;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.top-nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* slight hover effect */
+}
+footer {
+  background-color: #333; /* background color for the footer */
+  color: #fff; /* text color for the footer */
+  text-align: center; /* center-align the content within the footer */
+  padding: 20px 0; /* add padding to the top and bottom of the footer */
+  width: 100%; /* make the footer span the full width of the viewport */
+}
